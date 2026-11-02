@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block title %}Quiz Result{% endblock %}
+
+{% block content %}
+
+<div class="container result-container">
+
+    <h1>Quiz Completed!</h1>
+
+    <div class="result-card">
+
+        <h2>Your Score</h2>
+
+        <h1>{{ score }} / {{ total }}</h1>
+
+        <h2>{{ percentage }}%</h2>
+
+        {% if percentage >= 80 %}
+            <h3 class="success">Excellent Work!</h3>
+        {% elif percentage >= 50 %}
+            <h3 class="success">Good Job!</h3>
+        {% else %}
+            <h3 class="error">Keep Practicing!</h3>
+        {% endif %}
+
+    </div>
+
+    <a href="{{ url_for('review') }}">
+        <button>Review Answers</button>
+    </a>
+
+    <a href="{{ url_for('quizzes') }}">
+        <button>Back to Quizzes</button>
+    </a>
+
+</div>
+
+{% endblock %}

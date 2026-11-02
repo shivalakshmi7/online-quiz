@@ -1,0 +1,39 @@
+
+{% extends "base.html" %}
+
+{% block title %}Available Quizzes{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Welcome, {{ name }}!</h1>
+    <h2>Select Your Quiz</h2>
+
+    <div class="quiz-list">
+
+        <div class="quiz-card">
+            <h2>Python Programming</h2>
+            <p>Test your Python knowledge.</p>
+            <p>10 Questions | 15 Minutes</p>
+
+            <a href="{{ url_for('quiz', subject='python') }}">
+                <button>Start Python Quiz</button>
+            </a>
+        </div>
+
+        <div class="quiz-card">
+            <h2>HTML & CSS</h2>
+            <p>Test your web development knowledge.</p>
+            <p>10 Questions | 15 Minutes</p>
+
+            <a href="{{ url_for('quiz', subject='html_css') }}">
+                <button>Start HTML & CSS Quiz</button>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,103 @@
+
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+
+<div class="container quiz-container">
+
+    <h1>{{ title }}</h1>
+    <h2>Answer All Questions</h2>
+
+    <div class="timer">
+        Time Remaining:
+        <span id="timer">15:00</span>
+    </div>
+
+    <form method="POST" id="quizForm">
+
+        {% for question in questions %}
+
+        {% set question_number = loop.index %}
+
+        <div class="quiz-card">
+
+            <h3>Question {{ question_number }}</h3>
+
+            <p>{{ question.question }}</p>
+
+            {% for key, value in question.options.items() %}
+
+            <label>
+                <input
+                    type="radio"
+                    name="q{{ question_number }}"
+                    value="{{ key }}"
+                    required
+                >
+                {{ key }}. {{ value }}
+            </label>
+
+            {% endfor %}
+
+        </div>
+
+        {% endfor %}
+
+        <button type="submit" id="submitButton">
+            Submit Quiz
+        </button>
+
+    </form>
+
+</div>
+
+<script>
+    let timeLeft = 15 * 60;
+
+    const timer = document.getElementById("timer");
+    const form = document.getElementById("quizForm");
+
+    let submitted = false;
+
+    const countdown = setInterval(function() {
+
+        let minutes = Math.floor(timeLeft / 60);
+        let seconds = timeLeft % 60;
+
+        timer.textContent =
+            String(minutes).padStart(2, "0") + ":" +
+            String(seconds).padStart(2, "0");
+
+        if (timeLeft <= 0) {
+
+            clearInterval(countdown);
+
+            if (!submitted) {
+                submitted = true;
+                alert("Time is over! Submitting your quiz.");
+                form.submit();
+            }
+
+            return;
+        }
+
+        timeLeft--;
+
+    }, 1000);
+
+    form.addEventListener("submit", function(event) {
+
+        if (submitted) {
+            event.preventDefault();
+            return;
+        }
+
+        submitted = true;
+        clearInterval(countdown);
+
+    });
+</script>
+
+{% endblock %}

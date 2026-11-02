@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f8;
+    color: #333;
+}
+
+.navbar {
+    background: #3949ab;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: center;
+}
+
+.auth-container {
+    max-width: 450px;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #00000015;
+}
+
+h1, h2, h3 {
+    margin-bottom: 18px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+input:not([type="radio"]) {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #3949ab;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #283593;
+}
+
+a {
+    text-decoration: none;
+}
+
+.quiz-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.quiz-card, .result-card {
+    background: white;
+    padding: 22px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+    text-align: left;
+}
+
+.quiz-card label {
+    display: block;
+    margin: 13px 0;
+    cursor: pointer;
+}
+
+.quiz-card input[type="radio"] {
+    margin-right: 10px;
+}
+
+.quiz-container {
+    max-width: 750px;
+}
+
+.timer {
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    background: #3949ab;
+    color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.result-card {
+    text-align: center;
+    padding: 35px;
+}
+
+.success {
+    color: #16834a;
+}
+
+.error {
+    color: #d32f2f;
+}
+
+.flash-message {
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    margin: 15px auto;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+}

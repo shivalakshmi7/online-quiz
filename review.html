@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block title %}Answer Review{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>Answer Review</h1>
+
+    {% for item in answers %}
+
+    <div class="quiz-card">
+
+        <h3>Question {{ loop.index }}</h3>
+
+        <p>{{ item.question }}</p>
+
+        <p>Your Answer: {{ item.selected }}</p>
+
+        <p>Correct Answer: {{ item.correct }}</p>
+
+        {% if item.is_correct %}
+            <h3 class="success">Correct Answer!</h3>
+        {% else %}
+            <h3 class="error">Wrong Answer!</h3>
+        {% endif %}
+
+    </div>
+
+    {% endfor %}
+
+    <a href="{{ url_for('quizzes') }}">
+        <button>Back to Quizzes</button>
+    </a>
+
+</div>
+
+{% endblock %}
