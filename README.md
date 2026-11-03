@@ -1,32 +1,33 @@
-# online-quiz
+# Online-Quiz
 An Online Quiz Application developed using Python Flask, HTML, CSS, and SQLite. Students can register, log in, attend quizzes, view scores, and review their answers.
-Online Quiz Application
-Project Overview
 
-The Online Quiz Application is a web-based application developed using Python Flask, HTML, CSS, and SQLite.
+Online Quiz Application
+
+## Project Overview
+
+An Online Quiz Application developed using Python Flask, HTML, CSS, and SQLite. Students can register, log in, attend online quizzes, and review their answers.
 
 This application allows students to register, log in, attend online quizzes, view their scores, and review their answers.
 
-Technologies Used
-Python
-Flask
-HTML
-CSS
-SQLite
-Werkzeug
-Features
-Student Registration
-Student Login and Logout
-User Authentication
-Python Programming Quiz
-HTML and CSS Quiz
-Multiple Choice Questions
-Automatic Score Calculation
-Result Display with Percentage
-Review Submitted Answers
-User-Friendly Interface
-Project Structure
-text
+## Technologies Used
+
+- Python
+- Flask
+- HTML
+- CSS
+- SQLite
+
+## Features
+* Student Registration
+* Student Login and Logout  
+* Python Programming Quiz   
+* HTML and CSS Quiz   
+* Multiple Choice Questions   
+* Automatic Score Calculation   
+* Result Display with Percentage   
+* Review Submitted Answers   
+* User-Friendly Interface    
+## Project Structure
 online-quiz/
 │
 ├── app.py
@@ -43,7 +44,8 @@ online-quiz/
 │
 └── style.css
 
-Installation and Setup
+
+## Installation and Setup
 Step 1: Clone the Repository
 bash
 git clone https://github.com/shivalakshmi7/online-quiz.git
@@ -62,15 +64,15 @@ python app.py
 
 Step 5: Open in Browser
 
-Visit the following URL:
+## Visit:
 
 text
 http://127.0.0.1:5000/
 
-How to Use
+## How to Use
 Open the Online Quiz Application.
-Register with your name, email, and password.
-Log in using your registered credentials.
+Register with your details.
+Log in using your credentials.
 Select a quiz subject.
 Answer the multiple-choice questions.
 Submit your answers.
@@ -82,20 +84,20 @@ The application uses SQLite to store student registration details.
 
 The database file quiz.db is created automatically when the application runs.
 
-Future Enhancements
+## Future Enhancements
 Add more quiz subjects.
 Add additional questions.
 Improve the user interface.
 Add an administrator module.
 Generate student performance reports.
-Conclusion
+## Conclusion
 
 The Online Quiz Application provides a simple and effective platform for students to test their knowledge through online quizzes. It helps students evaluate their performance and review their answers.
 
-GitHub Repository
+## GitHub Repository
 
-https://github.com/shivalakshmi7/online-quiz
+Online Quiz Application
 
-Author
+## Author
 
 Shivalakshmi
