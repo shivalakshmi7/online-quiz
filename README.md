@@ -82,33 +82,35 @@ http://127.0.0.1:5000/
 ```
 
 ## How to Use
-Open the Online Quiz Application.
-Register with your details.
-Log in using your credentials.
-Select a quiz subject.
-Answer the multiple-choice questions.
-Submit your answers.
-View your score and percentage.
-Review your submitted answers.
-Database
+1. Open the Online Quiz Application.
+2. Register with your details.
+3. Log in using your credentials.
+4. Select a quiz subject.
+5. Answer the multiple-choice questions.
+6. Submit your answers.
+7. View your score and percentage.
+8. Review your submitted answers.
+## Database
 
-The application uses SQLite to store student registration details.
+The application uses SQLite to store student registration details and manage application data.
 
 The database file quiz.db is created automatically when the application runs.
 
 ## Future Enhancements
-Add more quiz subjects.
-Add additional questions.
-Improve the user interface.
-Add an administrator module.
-Generate student performance reports.
+- Add more quiz subjects.
+- Add additional questions.
+- Improve the user interface.
+- Add an administrator module.
+- Generate student performance reports.
 ## Conclusion
 
 The Online Quiz Application provides a simple and effective platform for students to test their knowledge through online quizzes. It helps students evaluate their performance and review their answers.
 
 ## GitHub Repository
 
-Online Quiz Application
+Online Quiz Application :
+ https://github.com/shivalakshmi7/online-quiz
+
 
 ## Author
 
