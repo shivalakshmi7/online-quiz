@@ -48,28 +48,38 @@ online-quiz/
 ```
 
 ## Installation and Setup
-Step 1: Clone the Repository
-bash
+
+Follow these steps to install and run the project.
+
+### Step 1: Clone the Repository
+
+```bash
 git clone https://github.com/shivalakshmi7/online-quiz.git
+```
 
-Step 2: Open the Project Folder
-bash
+### Step 2: Open the Project Folder
+
+```bash
 cd online-quiz
+```
 
-Step 3: Install Required Packages
-bash
+### Step 3: Install Required Packages
+
+```bash
 pip install -r requirements.txt
+```
 
-Step 4: Run the Application
-bash
+### Step 4: Run the Application
+
+```bash
 python app.py
+```
 
-Step 5: Open in Browser
+### Step 5: Open in Browser
 
-## Visit:
-
-text
+```text
 http://127.0.0.1:5000/
+```
 
 ## How to Use
 Open the Online Quiz Application.
