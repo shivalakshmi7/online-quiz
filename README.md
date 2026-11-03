@@ -28,6 +28,8 @@ This application allows students to register, log in, attend online quizzes, vie
 * Review Submitted Answers   
 * User-Friendly Interface    
 ## Project Structure
+
+```text
 online-quiz/
 │
 ├── app.py
@@ -43,7 +45,7 @@ online-quiz/
 ├── review.html
 │
 └── style.css
-
+```
 
 ## Installation and Setup
 Step 1: Clone the Repository
